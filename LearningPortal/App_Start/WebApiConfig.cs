@@ -33,6 +33,8 @@ namespace LearningPortal
                 routeName: "ODataRoute",
                 routePrefix: null,
                 model: builder.GetEdmModel());
+
+            config.Filter().Expand().Select().OrderBy().MaxTop(null).Count();
         }
     }
 }
